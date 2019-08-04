@@ -1,0 +1,21 @@
+{
+  "name": "algorithm-example-python",
+  "version": "1.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./dockerfile/build.sh algorithm-example-python"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kube-HPC/algorithm-example-python.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kube-HPC/algorithm-example-python/issues"
+  },
+  "homepage": "https://github.com/kube-HPC/algorithm-example-python#readme"
+}
