@@ -7,7 +7,3 @@ class Config:
         "protocol": os.environ.get('WORKER_SOCKET_PROTOCOL', "ws"),
         "url": os.environ.get('WORKER_SOCKET_URL', None),
     }
-    algorithm = {
-        "path": os.environ.get('ALGORITHM_PATH', "algorithm"),
-        "entryPoint": os.environ.get('ALGORITHM_ENTRY_POINT', "main.py")
-    }

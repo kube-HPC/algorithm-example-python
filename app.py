@@ -1,12 +1,15 @@
-import config
+import os
 from hkube_python_wrapper import Algorunner
+from config import Config
+
+import algorithm.main as algorithm
 
 def main():
     print("starting algorithm runner")
-    conf = config.Config
     alg = Algorunner()
-    alg.loadAlgorithm(conf.algorithm)
-    alg.connectToWorker(conf.socket)
+    alg.loadAlgorithmCallbacks(algorithm.start)
+    job = alg.connectToWorker(Config.socket)
+    job.join()
 
 if __name__ == "__main__":
     main()
