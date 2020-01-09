@@ -1,1 +1,1 @@
-hkube-python-wrapper==0.3.2
+hkube-python-wrapper==0.4.0a1.dev2
