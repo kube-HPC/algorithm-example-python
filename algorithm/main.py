@@ -7,3 +7,6 @@ def start(args, hkubeapi):
         return ret.get('response') 
     time.sleep(1)
     return 42
+
+def stop(args):
+    print("stop called")
