@@ -1,7 +1,7 @@
 import time
 def start(args, hkubeapi):
     print('Algorithm start called')
-    print('jobId: {0}, taskId: {1}'.format(args.get('jobId'), args.get('taskId')))
+    print('jobId: {0}, taskId: {1}, nodeName'.format(args.get('jobId'), args.get('taskId'), args.get('nodeName')))
     input=args['input']
     if input and input[0] == 'eval-alg':
         ret = hkubeapi.start_algorithm('eval-alg', [5, 6], resultAsRaw=True)
