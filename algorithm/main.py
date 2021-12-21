@@ -26,7 +26,8 @@ command:
 def start(args, hkubeApi=None):
     global isActive
     isActive = True
-    nodeInput = args.get('input')[0]
+    input = args.get('input')
+    nodeInput = input[0] if len(input) > 0 else None
     isStreaming = args.get('kind') == 'stream'
 
     if(isStreaming):
