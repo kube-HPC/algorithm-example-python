@@ -51,6 +51,7 @@ def start(args, hkubeApi=None):
             return 42
 
     if(not isinstance(nodeInput, dict)):
+        time.sleep(1)
         return nodeInput
 
     command = nodeInput.get("command")
